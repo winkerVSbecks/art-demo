@@ -86,6 +86,11 @@ export const Page: React.FC = () => {
           Viewports addon in the toolbar
         </div>
       </section>
+      <div className="storybook-card">
+        <a href="https://storybook.js.org/tutorials/intro-to-storybook/">
+          <img src="https://storybook.js.org/tutorials/intro-to-storybook/opengraph-cover.jpg" />
+        </a>
+      </div>
     </article>
   );
 };

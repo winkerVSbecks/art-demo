@@ -66,3 +66,26 @@
 .storybook-page .tip-wrapper svg path {
   fill: #1ea7fd;
 }
+
+.storybook-card {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+.storybook-card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  transition: background 150ms ease-out, border 150ms ease-out,
+    transform 150ms ease-out;
+}
+.storybook-card img:hover {
+  border-color: rgba(30, 167, 253, 0.5);
+  transform: translate3d(0px, -3px, 0px);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 10px 0px;
+}

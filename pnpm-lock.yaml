@@ -24,6 +24,9 @@ importers:
       '@eslint/js':
         specifier: ^9.21.0
         version: 9.23.0
+      '@storybook/addon-a11y':
+        specifier: ^8.6.11
+        version: 8.6.11(storybook@8.6.11)
       '@storybook/addon-essentials':
         specifier: ^8.6.11
         version: 8.6.11(@types/react@19.0.12)(storybook@8.6.11)
@@ -550,6 +553,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@storybook/addon-a11y@8.6.11':
+    resolution: {integrity: sha512-VijoBrsoHkZDkBNT9Fkpt569S4p5rVRBCUrcyZiGOLAt/DZtuAWQEBO4eENHPldvEXtjHckZRzz4oaUwJGcXGQ==}
+    peerDependencies:
+      storybook: ^8.6.11
+
   '@storybook/addon-actions@8.6.11':
     resolution: {integrity: sha512-7VORphqmxJf2J2a8tRgCAIeaMQ1JjYZwmwsrOwXBt77NjJbAC2qx9KecN1fsKKCyRVSk/wAICvOLStKM15+v2g==}
     peerDependencies:
@@ -902,6 +910,10 @@ packages:
   available-typed-arrays@1.0.7:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
+
+  axe-core@4.10.3:
+    resolution: {integrity: sha512-Xm7bpRXnDSX2YE2YFfBk2FnF0ep6tmG7xPh8iHee8MIcrgq762Nkce856dYtJYLkuIoYZvGfTs/PbZhideTcEg==}
+    engines: {node: '>=4'}
 
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -2256,6 +2268,14 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.37.0':
     optional: true
 
+  '@storybook/addon-a11y@8.6.11(storybook@8.6.11)':
+    dependencies:
+      '@storybook/addon-highlight': 8.6.11(storybook@8.6.11)
+      '@storybook/global': 5.0.0
+      '@storybook/test': 8.6.11(storybook@8.6.11)
+      axe-core: 4.10.3
+      storybook: 8.6.11
+
   '@storybook/addon-actions@8.6.11(storybook@8.6.11)':
     dependencies:
       '@storybook/global': 5.0.0
@@ -2707,6 +2727,8 @@ snapshots:
   available-typed-arrays@1.0.7:
     dependencies:
       possible-typed-array-names: 1.1.0
+
+  axe-core@4.10.3: {}
 
   balanced-match@1.0.2: {}
 

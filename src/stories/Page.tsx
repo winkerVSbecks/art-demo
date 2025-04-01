@@ -88,7 +88,10 @@ export const Page: React.FC = () => {
       </section>
       <div className="storybook-card">
         <a href="https://storybook.js.org/tutorials/intro-to-storybook/">
-          <img src="https://storybook.js.org/tutorials/intro-to-storybook/opengraph-cover.jpg" />
+          <img
+            src="https://storybook.js.org/tutorials/intro-to-storybook/opengraph-cover.jpg"
+            alt="Check out the Intro to Storybook tutorial"
+          />
         </a>
       </div>
     </article>
